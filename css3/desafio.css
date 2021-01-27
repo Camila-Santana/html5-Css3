@@ -1,0 +1,64 @@
+/*Como continuação do desafio html5
+Vamos para o DESAFIO CSS*/
+
+
+/*Você tem liberdade para escolher a estilização que preferir para esse desafio, mas alguns pontos são obrigatórios:
+
+Deve ser aplicado um background - ok
+Deve ser utilizada a fonte Roboto - ok
+O header precisa ocupar todo o espaço lateral e superior (body sem margin) - ok
+O header precisa ter um espaçamento interno de 30px em todas as direções - ok
+Os links devem ter um espaçamento de 30px entre si*/
+
+@charset "UTF-8";
+* {
+    /*Reset de espaçamentos padrões do navegador*/
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    padding: 30px;
+    /*espaçamento interno em todas as direções de 30px*/
+}
+
+header div a {
+    margin: 0 16px;
+    /*espaçamento zero acima/abaixo e 16px direita/esquerda (entre si)*/
+}
+
+
+/*Requisitos concluídos do desafio - obrigatórios*/
+
+
+/*PEQUENOS AJUSTES ADICIONAIS - liberdade de criação*/
+
+header div {
+    /*alinhar todo o conteúdo txt*/
+    text-align: center;
+}
+
+header div a {
+    /*lembre da força da cascata*/
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+/*EFEITO HOVER*/
+
+header div a:hover {
+    color: tomato;
+    transition: 300ms;
+}
