@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* Define a codificação da folha de estilo para Unicode UTF-8 */
+
+* {
+    /* esse seletor tem por definição zerar o espaçamento padrão predefinido pelo navegador */
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font externa css*/
+}
+
+header {
+    padding: 32px;
+    /*espaço interno - sentido anti horário: top/bottom/left/reight*/
+    border-bottom: 1px solid #333;
+    background: rgba(0, 0, 0, 0.1);
+    /*rgb (a) Alpha*/
+}
+
+
+/* agrupando os elementos
+/* conhecendo a cascata do CSS*/
+
+header div {
+    text-align: center/* alinhamento de texto*/
+}
+
+header div a {
+    color: white;
+    /* color, coloração de textos*/
+    /* a ideia de cascata é mais forte nos elementos
+     poderia atribuir a cor diretamente ao elemento/seletor 'a'
+     porém, vai mudar tudo o que tiver como seletor 'a'
+     nesse caso, quero a mudança específica para este 'a'
+     do header...*/
+    font-size: 18px;
+    /*tamanho do texto*/
+    line-height: 28px;
+    /*tamanho da linha do texto, na dúvida, use 10px a mais
+    do font size*/
+    margin: 0 16px;
+    /* zero em cima/baixo e 16 nas laterais*/
+    text-decoration: none;
+    /*retira o anderline do txt*/
+}
+
+
+/* Efeitos */
+
+header div a:hover {
+    /*efeito mouser*/
+    color: #50fa7b;
+    transition: color 200ms;
+    /*efeito transição cor/suavidade*/
+}
