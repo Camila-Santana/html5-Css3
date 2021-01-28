@@ -59,3 +59,20 @@ header div a:hover {
     transition: color 200ms;
     /*efeito transição cor/suavidade*/
 }
+
+
+/* estilizando pg sobre */
+
+#sobre {
+    /* relembrando que as divs tem precedência */
+    text-align: center;
+    padding: 32px;
+}
+
+
+/* estilizando a imagem */
+
+#sobre img {
+    border-radius: 50%;
+    border: 1px solid #50fa7b;
+}
