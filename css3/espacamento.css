@@ -13,6 +13,7 @@ body {
     background: #282a36;
     font-family: 'Source Sans Pro', sans-serif;
     /*font externa css*/
+    color: white;
 }
 
 header {
@@ -75,4 +76,32 @@ header div a:hover {
 #sobre img {
     border-radius: 50%;
     border: 1px solid #50fa7b;
+}
+
+
+/* estilizando txt e fontes */
+
+#sobre h1 {
+    font-size: 42px;
+    /*tamanho*/
+    line-height: 52px;
+    /*altura da linha*/
+    font-weight: bold;
+    /*peso no sentido visual*/
+}
+
+#sobre h2 {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#sobre p {
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 100;
 }
