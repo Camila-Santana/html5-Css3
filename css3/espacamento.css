@@ -35,11 +35,11 @@ header {
 /* agrupando os elementos
 /* conhecendo a cascata do CSS*/
 
-header div {
+.links {
     text-align: center/* alinhamento de texto*/
 }
 
-header div a {
+.links a {
     color: white;
     /* color, coloração de textos*/
     /* a ideia de cascata é mais forte nos elementos
@@ -61,7 +61,7 @@ header div a {
 
 /* Efeitos */
 
-header div a:hover {
+.links a:hover {
     /*efeito mouser*/
     color: var(--color-green);
     /* cor atribuída a variável declarada */
@@ -84,6 +84,8 @@ header div a:hover {
 #sobre img {
     border-radius: 50%;
     border: 1px solid var(--color-green);
+    margin-bottom: 32px;
+    height: 250px;
 }
 
 
@@ -112,4 +114,12 @@ header div a:hover {
     font-size: 21px;
     line-height: 30px;
     font-weight: 100;
+}
+
+
+/*estilizando link rede social*/
+
+#link-footer a {
+    border-bottom: 1px solid var(--color-green);
+    /*cor definida na variável*/
 }
