@@ -2,8 +2,15 @@
 
 /*Variável no css*/
 
+
+/* lembre-se: como é variável*/
+
+
+/*eu posos escolher qualquer identificador/nome*/
+
 :root {
     --color-green: #8afca7;
+    --color-rocketseat: #7159c1;
 }
 
 
@@ -122,4 +129,53 @@ header {
 #link-footer a {
     border-bottom: 1px solid var(--color-green);
     /*cor definida na variável*/
+}
+
+#projetos h1 {
+    text-align: center;
+}
+
+
+/*CARDS*/
+
+
+/*peguei a classe da sessão marjoritária do elemento pai*/
+
+.cards {
+    max-width: 800px;
+    /*largura max do card*/
+    margin: 0 auto;
+    /*ajustando o card ao meio*/
+}
+
+.card {
+    background-color: #7159c1;
+}
+
+.image-card-container img {
+    width: 100%;
+    /*coloquei para que o card ocupasse 100 % largura definida no max-width*/
+}
+
+.card-texto,
+.card-info {
+    padding: 24px;
+}
+
+
+/*GRID*/
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*defino quantas colunas eu quero*/
+}
+
+.card-preco {
+    background-color: var(--color-rocketseat);
+    filter: brightness(90%);
+    /*o filter é como se fosse o opacity, brrilho de 90%*/
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
 }
