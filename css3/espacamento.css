@@ -142,24 +142,26 @@ header {
 /*peguei a classe da sessão marjoritária do elemento pai*/
 
 .cards {
-    max-width: 800px;
-    /*largura max do card*/
     margin: 0 auto;
     /*ajustando o card ao meio*/
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.image-card-container img {
+    width: 100%;
 }
 
 .card {
     background-color: #7159c1;
 }
 
-.image-card-container img {
-    width: 100%;
-    /*coloquei para que o card ocupasse 100 % largura definida no max-width*/
-}
-
 .card-texto,
 .card-info {
     padding: 24px;
+    background-color: var(--color-rocketseat);
 }
 
 
