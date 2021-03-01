@@ -1,183 +1,264 @@
-@charset "utf-8";
-
-/*Variável no css*/
-
-
-/* lembre-se: como é variável*/
-
-
-/*eu posos escolher qualquer identificador/nome*/
-
-:root {
-    --color-green: #8afca7;
-    --color-rocketseat: #7159c1;
-}
-
-
-/* Define a codificação da folha de estilo para Unicode UTF-8 */
-
-* {
-    /* esse seletor tem por definição zerar o espaçamento padrão predefinido pelo navegador */
-    margin: 0%;
-    padding: 0%;
-    border: 0;
-}
-
-body {
-    background: #282a36;
-    font-family: 'Source Sans Pro', sans-serif;
-    /*font externa css*/
-    color: white;
-}
-
-header {
-    padding: 32px;
-    /*espaço interno - sentido anti horário: top/bottom/left/reight*/
-    border-bottom: 1px solid #333;
-    background: rgba(0, 0, 0, 0.1);
-    /*rgb (a) Alpha*/
-}
-
-
-/* agrupando os elementos
+    @charset "utf-8";
+    /*Variável no css*/
+    /* lembre-se: como é variável*/
+    /*eu posos escolher qualquer identificador/nome*/
+    
+     :root {
+        --color-rocketseat: #7159c1;
+        --color-yellow: black;
+        --color-black: black;
+    }
+    /* Define a codificação da folha de estilo para Unicode UTF-8 */
+    
+    * {
+        /* esse seletor tem por definição zerar o espaçamento padrão predefinido pelo navegador */
+        margin: 0%;
+        padding: 0%;
+        border: 0;
+    }
+    
+    body {
+        background: #282a36;
+        font-family: 'Source Sans Pro', sans-serif;
+        /*font externa css*/
+        color: white;
+    }
+    
+    header {
+        padding: 32px;
+        /*espaço interno - sentido anti horário: top/bottom/left/reight*/
+        border-bottom: 1px solid #333;
+        background: rgba(0, 0, 0, 0.1);
+        /*rgb (a) Alpha*/
+    }
+    /* agrupando os elementos
 /* conhecendo a cascata do CSS*/
-
-.links {
-    text-align: center/* alinhamento de texto*/
-}
-
-.links a {
-    color: white;
-    /* color, coloração de textos*/
-    /* a ideia de cascata é mais forte nos elementos
+    
+    .links {
+        text-align: center/* alinhamento de texto*/
+    }
+    
+    .links a {
+        color: white;
+        /* color, coloração de textos*/
+        /* a ideia de cascata é mais forte nos elementos
      poderia atribuir a cor diretamente ao elemento/seletor 'a'
      porém, vai mudar tudo o que tiver como seletor 'a'
      nesse caso, quero a mudança específica para este 'a'
      do header...*/
-    font-size: 18px;
-    /*tamanho do texto*/
-    line-height: 28px;
-    /*tamanho da linha do texto, na dúvida, use 10px a mais
+        font-size: 18px;
+        /*tamanho do texto*/
+        line-height: 28px;
+        /*tamanho da linha do texto, na dúvida, use 10px a mais
     do font size*/
-    margin: 0 16px;
-    /* zero em cima/baixo e 16 nas laterais*/
-    text-decoration: none;
-    /*retira o anderline do txt*/
-}
-
-
-/* Efeitos */
-
-.links a:hover {
-    /*efeito mouser*/
-    color: var(--color-green);
-    /* cor atribuída a variável declarada */
-    transition: color 200ms;
-    /*efeito transição cor/suavidade*/
-}
-
-
-/* estilizando pg sobre */
-
-#sobre {
-    /* relembrando que as divs tem precedência */
-    text-align: center;
-    padding: 32px;
-}
-
-
-/* estilizando a imagem */
-
-#sobre img {
-    border-radius: 50%;
-    border: 1px solid var(--color-green);
-    margin-bottom: 32px;
-    height: 250px;
-}
-
-
-/* estilizando txt e fontes */
-
-#sobre h1 {
-    font-size: 42px;
-    /*tamanho*/
-    line-height: 52px;
-    /*altura da linha*/
-    font-weight: bold;
-    /*peso no sentido visual*/
-}
-
-#sobre h2 {
-    font-size: 20px;
-    line-height: 34px;
-    font-weight: normal;
-    margin-top: 8px;
-    opacity: 0.8;
-}
-
-#sobre p {
-    max-width: 500px;
-    margin: 32px auto;
-    font-size: 21px;
-    line-height: 30px;
-    font-weight: 100;
-}
-
-
-/*estilizando link rede social*/
-
-#link-footer a {
-    border-bottom: 1px solid var(--color-green);
-    /*cor definida na variável*/
-}
-
-#projetos h1 {
-    text-align: center;
-}
-
-
-/*CARDS*/
-
-
-/*peguei a classe da sessão marjoritária do elemento pai*/
-
-.cards {
-    margin: 0 auto;
-    /*ajustando o card ao meio*/
-    max-width: 800px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.image-card-container img {
-    width: 100%;
-}
-
-.card {
-    background-color: #7159c1;
-}
-
-.card-texto,
-.card-info {
-    padding: 24px;
-    background-color: var(--color-rocketseat);
-}
-
-
-/*GRID*/
-
-.card-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*defino quantas colunas eu quero*/
-}
-
-.card-preco {
-    background-color: var(--color-rocketseat);
-    filter: brightness(90%);
-    /*o filter é como se fosse o opacity, brrilho de 90%*/
-    padding: 5px 20px;
-    border-radius: 20px;
-    text-align: center;
-}
+        margin: 0 16px;
+        /* zero em cima/baixo e 16 nas laterais*/
+        text-decoration: none;
+        /*retira o anderline do txt*/
+    }
+    /* Efeitos */
+    
+    .links a:hover {
+        /*efeito mouser*/
+        color: var(--color-black);
+        /* cor atribuída a variável declarada */
+        transition: color 200ms;
+        /*efeito transição cor/suavidade*/
+    }
+    /* estilizando pg sobre */
+    
+    #sobre {
+        /* relembrando que as divs tem precedência */
+        text-align: center;
+        padding: 32px;
+    }
+    /* estilizando a imagem */
+    
+    #sobre img {
+        margin-bottom: 32px;
+        border-radius: 45%;
+        background: linear-gradient(gray, white);
+        opacity: 0.6;
+    }
+    /* estilizando txt e fontes */
+    
+    #sobre h1 {
+        font-size: 42px;
+        /*tamanho*/
+        line-height: 52px;
+        /*altura da linha*/
+        font-weight: bold;
+        /*peso no sentido visual*/
+        color: gray;
+    }
+    
+    #sobre h2 {
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: normal;
+        margin-top: 8px;
+        opacity: 0.8;
+    }
+    
+    #sobre p {
+        max-width: 500px;
+        margin: 32px auto;
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 100;
+    }
+    /*estilizando link rede social*/
+    
+    #link-footer a {
+        border-bottom: 1px solid var(--color-yellow);
+        /*cor definida na variável*/
+    }
+    
+    #projetos h1 {
+        text-align: center;
+    }
+    /*CARDS*/
+    /*peguei a classe da sessão marjoritária do elemento pai*/
+    
+    .cards {
+        margin: 0 auto;
+        /*ajustando o card ao meio*/
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .image-card-container img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card {
+        background-color: #7159c1;
+    }
+    
+    .card-texto,
+    .card-info {
+        padding: 24px;
+        background-color: var(--color-rocketseat);
+    }
+    /*GRID*/
+    
+    .card-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*defino quantas colunas eu quero*/
+    }
+    
+    .card-preco {
+        background-color: var(--color-rocketseat);
+        filter: brightness(90%);
+        /*o filter é como se fosse o opacity, brrilho de 90%*/
+        padding: 5px 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    /*projeto 2*/
+    
+    .title {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .artigo {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .sessao2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 800px;
+        margin: 20px auto;
+        gap: 20px;
+    }
+    
+    .imagem img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2%;
+    }
+    /*projeto 3*/
+    
+    #cor-fundo {
+        background: linear-gradient(black, gray, black);
+    }
+    
+    .projeto3 img {
+        border-radius: 50%;
+        border: 1px solid #fff;
+        padding: 10px;
+        margin: 10px;
+        background: white;
+        opacity: 0.9;
+    }
+    
+    .projeto3 {
+        display: flex;
+        /*elemento pai apliquei as propriedades de alinhamento*/
+        justify-content: center;
+    }
+    
+    .destaque {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    p {
+        font-size: 16pt;
+    }
+    
+    .rede-social {
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    .rede-social img {
+        border-radius: 90%;
+        height: 50px;
+        margin: 10px 16px;
+    }
+    
+    .fotografias {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 800px;
+        margin: 20px auto;
+        gap: 20px;
+    }
+    
+    .fotografias img {
+        width: 100%;
+        border-radius: 2%;
+        height: 45%;
+        border-left: 1px solid gray;
+    }
+    
+    .frases p {
+        padding: 10px;
+        font-size: 14pt;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 14pt;
+        padding: 40px;
+    }
+    /*efeitos*/
+    
+    .fotografias img:hover {
+        border-left: 1px solid crimson;
+    }
+    
+    .rede-social img:hover {
+        border: 1px solid crimson;
+    }
