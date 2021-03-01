@@ -210,8 +210,16 @@
         padding: 20px;
     }
     
+    button {
+        margin: 26px 0;
+        background: salmon;
+        width: 153px;
+        border-radius: 25%;
+        padding: 10px;
+    }
+    
     p {
-        font-size: 16pt;
+        font-size: 15pt;
     }
     
     .rede-social {
@@ -257,8 +265,15 @@
     
     .fotografias img:hover {
         border-left: 1px solid crimson;
+        background: white;
+        opacity: 0.8;
     }
     
     .rede-social img:hover {
         border: 1px solid crimson;
+    }
+    
+    button:hover {
+        color: white;
+        cursor: pointer;
     }
