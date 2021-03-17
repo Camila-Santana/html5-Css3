@@ -380,6 +380,9 @@
             color: black;
         }
         /*Modal*/
+        /*Modals são feitos com HTML, CSS e JavaScript;
+Eles são posicionados acima de todas as coisas do documento
+igual aquelas janelinhas de pop ups kkk*/
         
         .modal-overlay {
             background-color: rgba(0, 0, 0, 0.1);
@@ -387,6 +390,8 @@
             height: 100%;
             position: fixed;
             top: 0;
+            opacity: 0;
+            /* opacity 0 some o modal*/
         }
         
         .modal {
@@ -402,4 +407,10 @@
             opacity: 0.6;
             position: absolute;
             right: 0;
+            cursor: pointer;
+        }
+        /*MODAL ACTIVE*/
+        
+        .modal-overlay.active {
+            opacity: 1;
         }
