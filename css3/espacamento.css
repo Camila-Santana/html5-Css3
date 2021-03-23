@@ -25,21 +25,14 @@
             /*font externa css*/
         }
         
-        #container {
-            background: black;
-            width: 100vw;
-            height: 100vh;
-            opacity: 0.4;
-        }
-        
         header {
             padding: 32px;
             /*espaço interno - sentido anti horário: top/bottom/left/reight*/
-            border-bottom: 1px solid #333;
             background: rgba(0, 0, 0, 0.1);
             width: 100%;
             height: 100%;
-            /*rgb (a) Alpha*/
+            border-bottom: 4px solid salmon;
+            opacity: .8;
         }
         /* agrupando os elementos
 /* conhecendo a cascata do CSS*/
@@ -47,6 +40,8 @@
         .links {
             text-align: center;
             /* alinhamento de texto*/
+            display: flex;
+            justify-content: space-around;
         }
         
         .links a {
@@ -66,6 +61,7 @@
             /* zero em cima/baixo e 16 nas laterais*/
             text-decoration: none;
             /*retira o anderline do txt*/
+            border-bottom: 1px solid rgba(175, 168, 168, 0.712);
         }
         /* Efeitos */
         
